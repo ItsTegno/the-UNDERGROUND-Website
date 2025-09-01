@@ -14,20 +14,19 @@ header {
 
 .navigation {
     display: flex;
-    width: 40%;
+    width: 100%;
     height: 10%;
     font-size: 150%;
-    position: absolute;
+    justify-content: flex-end;
+    position: sticky;
     top: 0;
-    right: 0;
 }
 .navigationItem {
-    width: 100%;
     height: 100%;
     border-radius: 15px;
     text-decoration: none;
     color : #ffffff;
-
+    margin: 0 2% 0 2%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -47,8 +46,19 @@ h1 {
     padding-bottom: 20px;
     font-size: 8vw;
     margin: 0;
+    animation: intro 2s
 }
 
+@keyframes intro {
+    0% {
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
 
 .container {
     width: 80%;
@@ -61,12 +71,11 @@ main{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.section1{
+.section1{   
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #000000;
     color : #ffffff;
     margin: 0px;
 }
@@ -81,8 +90,18 @@ main{
 }
 
 .spotify-text{
-    padding: 100px;
+    padding: 30px 100px 30px 100px;
     color : #000000;
+}
+
+.spotify-title{
+    font-size: 500%;
+    font-weight: bold;
+    margin: 0;
+}
+.spotify-subtitle{
+    font-size: 200%;
+    margin: 0;
 }
 
 footer {
@@ -96,9 +115,9 @@ footer {
 }
 
 .video-bg {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            object-fit: cover;
-            z-index: -1;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
