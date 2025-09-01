@@ -27,14 +27,16 @@ header {
     border-radius: 15px;
     text-decoration: none;
     color : #ffffff;
-    background: rgba(255, 255, 255, 0.1);
-    font-weight: bold;
+
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 
     transition: .3s;
+}
+.navigationItem:hover {
+    transform: scale(1.1);
 }
 
 h1 {
@@ -47,10 +49,6 @@ h1 {
     margin: 0;
 }
 
-p {
-    margin: 15px 0;
-    color: #ffffff;
-}
 
 .container {
     width: 80%;
@@ -59,19 +57,32 @@ p {
 }
 
 main{
-    padding: 20px;
     background: #000000;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section1{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000000;
+    color : #ffffff;
+    margin: 0px;
 }
 
 .spotify{
     display: flex;
     padding-left: 150px;
     padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #ffffff;
 }
 
 .spotify-text{
     padding: 100px;
+    color : #000000;
 }
 
 footer {
