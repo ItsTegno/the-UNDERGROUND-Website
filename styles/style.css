@@ -26,11 +26,10 @@ header {
     border-radius: 15px;
     text-decoration: none;
     color : #ffffff;
-<<<<<<< HEAD
     margin: 0 2% 0 2%;
-=======
+}
 
->>>>>>> 37788b87db1b45a9a589f80e3a617425826ce89e
+.navigationItem {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -53,7 +52,6 @@ h1 {
     animation: intro 2s
 }
 
-<<<<<<< HEAD
 @keyframes intro {
     0% {
         opacity: 0; 
@@ -64,8 +62,6 @@ h1 {
         transform: translateY(0); 
     }
 }
-=======
->>>>>>> 37788b87db1b45a9a589f80e3a617425826ce89e
 
 .container {
     width: 80%;
@@ -78,19 +74,13 @@ main{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-<<<<<<< HEAD
-.section1{   
-=======
+
 .section1{
->>>>>>> 37788b87db1b45a9a589f80e3a617425826ce89e
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
-<<<<<<< HEAD
-=======
     background: #000000;
->>>>>>> 37788b87db1b45a9a589f80e3a617425826ce89e
     color : #ffffff;
     margin: 0px;
 }
@@ -105,7 +95,6 @@ main{
 }
 
 .spotify-text{
-<<<<<<< HEAD
     padding: 30px 100px 30px 100px;
     color : #000000;
 }
@@ -118,10 +107,8 @@ main{
 .spotify-subtitle{
     font-size: 200%;
     margin: 0;
-=======
     padding: 100px;
     color : #000000;
->>>>>>> 37788b87db1b45a9a589f80e3a617425826ce89e
 }
 
 footer {
@@ -135,17 +122,11 @@ footer {
 }
 
 .video-bg {
-<<<<<<< HEAD
     position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
     object-fit: cover;
     z-index: -1;
-=======
-            position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            object-fit: cover;
-            z-index: -1;
->>>>>>> 37788b87db1b45a9a589f80e3a617425826ce89e
 }
