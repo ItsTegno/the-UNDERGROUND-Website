@@ -85,6 +85,14 @@ main{
     margin: 0px;
 }
 
+.separator{
+    height: 100%;
+}
+
+.gradient-bg{
+    width: 100vw;
+}
+
 .spotify{
     display: flex;
     padding-left: 150px;
