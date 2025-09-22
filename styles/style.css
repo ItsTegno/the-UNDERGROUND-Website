@@ -5,6 +5,10 @@ body {
     background-color: #ffffff;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     color: #ffffff;
     text-align: left;
@@ -69,33 +73,56 @@ h1 {
     overflow: hidden;
 }
 
-.section1{
+.sine{
+    display: flex;
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #000000;
-    color : #ffffff;
     margin: 0px;
+}
+
+.sine-text{
+    padding: 30px 100px 30px 0px;
+    color : #ffffff;
+}
+
+.sine-title{
+    font-size: 500%;
+    font-weight: bold;
+    margin: 0;
+}
+.sine-subtitle{
+    font-size: 200%;
+    margin: 0;
+}
+
+.sine-buttons{
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    width: 30%;
 }
 
 .button{
     background-color: #000000;
-    border: solid 2px #ffffff;
-    color: white;
+    border: 2px solid #ffffff;
+    color: #ffffff;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin: 10px 10px 10px 0px;
-    border-radius: 10px;
-    box-shadow: 0px 10px #ffffff;
-    transition: .3s;
+    margin: 10px 0px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 0px #ffffff;
 }
 
 .button:hover {
     background-color: #ffffff;
-    transform: translateY(-5px);
+    transform: translateY(10px);
     color: #000000;
     box-shadow: 0px 0px #ffffff;
 }
@@ -113,6 +140,7 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     background: #ffffff;
+    margin: 0px;
 }
 
 .spotify-text{
@@ -128,8 +156,6 @@ h1 {
 .spotify-subtitle{
     font-size: 200%;
     margin: 0;
-    padding: 100px;
-    color : #000000;
 }
 
 footer {
