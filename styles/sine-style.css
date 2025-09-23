@@ -11,17 +11,28 @@
 .sine-text{
     color : #ffffff;
 }
-
-.sine-title{
-    font-size: 6vw;
-    font-weight: bold;
+@media (max-width: 768px) {
+    .sine-title{
+        font-size: 8vw;
+        font-weight: bold;
+        margin: 0;
+    }
+    .sine-subtitle{
+        font-size: 4vw;
     margin: 0;
+    }
 }
-.sine-subtitle{
-    font-size: 2vw;
-    margin: 0;
+@media (min-width: 768px) {
+    .sine-title{
+        font-size: 6vw;
+        font-weight: bold;
+        margin: 0;
+    }
+    .sine-subtitle{
+        font-size: 2vw;
+        margin: 0;
+    }
 }
-
 .sine-buttons{
     display: flex;
     flex-direction: column; /* Coloca los elementos uno encima del otro */
@@ -63,12 +74,25 @@
     color : #000000;
 }
 
-.spotify-title{
-    font-size: 6vw;
-    font-weight: bold;
+@media (max-width: 768px) {
+    .spotify-title{
+        font-size: 8vw;
+        font-weight: bold;
+        margin: 0;
+    }
+    .spotify-subtitle{
+        font-size: 4vw;
     margin: 0;
+    }
 }
-.spotify-subtitle{
-    font-size: 2vw;
-    margin: 0;
+@media (min-width: 768px) {
+    .spotify-title{
+        font-size: 6vw;
+        font-weight: bold;
+        margin: 0;
+    }
+    .spotify-subtitle{
+        font-size: 2vw;
+        margin: 0;
+    }
 }
