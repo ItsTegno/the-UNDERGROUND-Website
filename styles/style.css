@@ -2,7 +2,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -67,93 +66,10 @@ h1 {
     }
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.sine{
-    display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: #000000;
-    margin: 0px;
-}
-
-.sine-text{
-    padding: 30px 100px 30px 0px;
-    color : #ffffff;
-}
-
-.sine-title{
-    font-size: 500%;
-    font-weight: bold;
-    margin: 0;
-}
-.sine-subtitle{
-    font-size: 200%;
-    margin: 0;
-}
-
-.sine-buttons{
-    display: flex;
-    flex-direction: column; /* Coloca los elementos uno encima del otro */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;     /* Centra horizontalmente */
-    width: 30%;
-}
-
-.button{
-    background-color: #000000;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 20px 0px;
-    border-radius: 12px;
-    transition: 0.2s cubic-bezier(0, 0.5, 0.5, 1);
-    box-shadow: 0px 10px 0px #ffffff;
-}
-
-.button:hover {
-    transform: translateY(10px);
-    box-shadow: 0px 0px #ffffff;
-}
-
 .separator{
     width: 100%;
     margin-bottom: -5px;
     image-rendering: pixelated;
-}
-
-.spotify{
-    display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: #ffffff;
-    margin: 0px;
-}
-
-.spotify-text{
-    padding: 30px 0px 30px 100px;
-    color : #000000;
-}
-
-.spotify-title{
-    font-size: 500%;
-    font-weight: bold;
-    margin: 0;
-}
-.spotify-subtitle{
-    font-size: 200%;
-    margin: 0;
 }
 
 footer {
