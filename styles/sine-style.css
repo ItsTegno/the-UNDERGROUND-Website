@@ -4,14 +4,25 @@
     padding-right: 10%;
     padding-top: 60px;
     padding-bottom: 60px;
-    background: #000000;
+    background-image: url("../media/Sine dots.avif");
+    background-size: cover;
+    background-position: center;
     margin: 0px;
 }
 
 .sine-text{
     color : #ffffff;
 }
+.sine-image{
+    height: auto;
+    border-radius: 15px;
+    align-self: center;
+}
 @media (max-width: 768px) {
+    .section-1, .section-3{
+        flex-direction: column;
+        align-items: center;
+    }
     .sine-title{
         font-size: 8vw;
         font-weight: bold;
@@ -19,10 +30,18 @@
     }
     .sine-subtitle{
         font-size: 4vw;
-    margin: 0;
+        margin: 0;
+    }
+    .sine-image{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
 @media (min-width: 768px) {
+    .section-1, .section-3{
+        flex-direction: row;
+    }
     .sine-title{
         font-size: 6vw;
         font-weight: bold;
@@ -31,6 +50,10 @@
     .sine-subtitle{
         font-size: 2vw;
         margin: 0;
+    }
+    .sine-image{
+        width: 40%;
+        margin-left: 50px;
     }
 }
 .sine-buttons{
@@ -66,7 +89,9 @@
     padding-right: 10%;
     padding-top: 60px;
     padding-bottom: 60px;
-    background: #ffffff;
+    background-image: url("../media/09sunPONERintro+letras (online-video-cutter.com).gif");
+    background-size: cover;
+    background-position: center;
     margin: 0px;
 }
 
