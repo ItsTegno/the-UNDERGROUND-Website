@@ -4,9 +4,10 @@
     padding-right: 10%;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url("../media/Sine dots.avif");
+    background-color: #000000;
+    /*background-image: url("../media/Sine dots.avif");
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     margin: 0px;
 }
 
@@ -89,9 +90,10 @@
     padding-right: 10%;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url("../media/09sunPONERintro+letras (online-video-cutter.com).gif");
+    /*background-image: url("../media/09sunPONERintro+letras (online-video-cutter.com).gif");
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
+    background: #ffffff;
     margin: 0px;
 }
 
@@ -120,8 +122,4 @@
         font-size: 2vw;
         margin: 0;
     }
-}
-
-#Inverted {
-    opacity: 0%;
 }

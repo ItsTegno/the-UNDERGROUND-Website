@@ -10,7 +10,6 @@ body {
 
 header {
     color: #ffffff;
-    text-align: left;
     height: 100vh;
     background: linear-gradient(to bottom, transparent, #000000);
 }
@@ -24,18 +23,12 @@ header {
     position: sticky;
     top: 0;
 }
+
 .navigationItem {
-    height: 100%;
-    border-radius: 15px;
     text-decoration: none;
     color : #ffffff;
     margin: 0 2% 0 2%;
-}
-
-.navigationItem {
-    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     transition: .3s;
@@ -46,28 +39,42 @@ header {
 
 h1 {
     position: absolute; 
-    bottom: 0; 
     left: 0; 
+    bottom: 0;
     padding-left: 50px;
     padding-bottom: 20px;
     font-size: 8vw;
     margin: 0;
-    animation: intro 2s
+    animation: intro 2s;
+    animation: h1Scroll 1s linear paused;
+    animation-fill-mode: both;
 }
 
 @keyframes intro {
     0% {
         opacity: 0; 
-        transform: translateY(30px); 
+        transform: translateY(30px);
     }
     100% {
         opacity: 1; 
-        transform: translateY(0); 
+        transform: translateY(0);
+    }
+}
+
+@keyframes h1Scroll {
+    0% {
+        left: 0;
+        font-size: 8vw;
+    }
+    100% {
+        left: 0;
+        font-size: 3vw;
     }
 }
 
 .separator{
     width: 100%;
+    height : 40px;
     margin-bottom: -5px;
     image-rendering: pixelated;
 }
@@ -82,7 +89,7 @@ footer {
     width: 100%;
 }
 
-.video-bg {
+.video_bg {
     position: fixed;
     top: 0; 
     left: 0;
