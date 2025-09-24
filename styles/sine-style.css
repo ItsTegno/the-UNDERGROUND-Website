@@ -35,7 +35,7 @@
     .sine-image{
         width: 100%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 60px;
     }
 }
 @media (min-width: 768px) {
@@ -120,4 +120,8 @@
         font-size: 2vw;
         margin: 0;
     }
+}
+
+#Inverted {
+    opacity: 0%;
 }
