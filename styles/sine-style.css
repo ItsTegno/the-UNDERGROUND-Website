@@ -29,6 +29,16 @@
     position: relative;
 }
 
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+}
+.subtitle{
+    font-size: 20px;
+    margin: 0;
+}
+
 .text_1, .text_2, .text_4{
     color : #ffffff;
 }
@@ -38,13 +48,11 @@
 
 
 .section_1_image{
-    height: auto;
     border-radius: 15px;
     align-self: center;
 }
 
 .section_3_image{
-    height: auto;
     border-radius: 15px;
     align-self: center;
 }
@@ -53,15 +61,6 @@
     .section-1, .section-3{
         flex-direction: column;
         align-items: center;
-    }
-    .title{
-        font-size: 8vw;
-        font-weight: bold;
-        margin: 0;
-    }
-    .subtitle{
-        font-size: 4vw;
-        margin: 0;
     }
     .section_1_image{
         width: 100%;
@@ -77,15 +76,6 @@
 @media (min-width: 768px) {
     .section-1, .section-3{
         flex-direction: row;
-    }
-    .title{
-        font-size: 6vw;
-        font-weight: bold;
-        margin: 0;
-    }
-    .subtitle{
-        font-size: 1.5vw;
-        margin: 0;
     }
     .section_1_image{
         width: 40%;
