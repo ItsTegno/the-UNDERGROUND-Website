@@ -16,19 +16,3 @@ window.addEventListener('scroll', function() {
         bg.style.transform = `translateY(${parallax}px)`;
     }
 });
-
-window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-
-    // Al salir, hacemos fade-out
-    document.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        const url = link.href;
-        document.body.classList.remove("loaded");
-        setTimeout(() => {
-          window.location.href = url;
-        }, 800); // mismo tiempo que el transition
-      });
-    });
