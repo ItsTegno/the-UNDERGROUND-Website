@@ -1,6 +1,5 @@
-.section-1{
-    display: flex;
-    padding: 90px 10% 90px 10%;
+.form-section{
+    padding: 110px 10% 110px 10%;
     margin: 0px;
     background-color: #767676;
     position: relative;

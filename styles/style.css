@@ -7,7 +7,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 /*::-webkit-scrollbar {
@@ -26,7 +31,6 @@ header {
     height: 10%;
     font-size: 150%;
     justify-content: flex-end;
-    position: sticky;
     top: 0;
 }
 
@@ -52,45 +56,22 @@ h1 {
     font-size: 8vw;
     margin: 0;
     animation: intro 2s;
-    animation: h1Scroll 1s linear paused;
-    animation-fill-mode: both;
 }
 
 @keyframes intro {
     0% {
         opacity: 0; 
-        transform: translateY(30px);
+        transform: translateX(-30px);
     }
     100% {
         opacity: 1; 
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
-@keyframes h1Scroll {
-    0% {
-        left: 0;
-        font-size: 8vw;
-    }
-    100% {
-        left: 0;
-        font-size: 3vw;
-    }
-}
-
-.separator_top{
+.separator{
     position: absolute;
     left: 0;
-    top: 0;
-    width: 1920px;
-    overflow: hidden;
-    height: 50px;
-    image-rendering: pixelated;
-}
-.separator_bottom{
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 1920px;
     overflow: hidden;
     height: 50px;
@@ -102,17 +83,14 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    font-weight: bold;
 }
 
 .social-icon {
     width: 30px;
     height: 30px;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
     filter: invert(1) brightness(2);
 }
 
