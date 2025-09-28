@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
