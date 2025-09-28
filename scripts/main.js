@@ -15,5 +15,8 @@ window.addEventListener('scroll', function() {
     if (bg) {
         const blurAmount = progress * 10; // 0px a 10px de blur
         bg.style.filter = `blur(${blurAmount}px)`;
+
+        const parallax = scrollY * -0.4; // Ajusta el factor para más/menos efecto
+        bg.style.transform = `translateY(${parallax}px)`;
     }
 });
