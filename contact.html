@@ -20,9 +20,24 @@
     </header>
     <main>
         <div class ="form-section">
+
+            <p class ="text">
+                    Para cualquier oferta de colaboración o cualquier 
+                    asunto relativo a este proyecto, contactadme a través de este formulario.
+            </p>
+            <form id="contact-form" action = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc51GxTi8mcUA9tss2z-Wzbiguv3OovtSO7kUYg7LQzzuvK_A/formResponse">
+                <input type="text" name="entry.1444736016" placeholder="Nombre" required>
+                <input type="email" name="emailAddress" placeholder="Correo electrónico" required>
+                <input type="number" name="entry.122088029" placeholder="Número de teléfono">
+                <textarea name="entry.1665219831" placeholder="Mensaje" required></textarea>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
             <img src="media\DitherGradient B-T.png" class="separator" style="top: 0;"/>
             <img src="media\DitherGradient T-B.png" class="separator" style="bottom: 0;"/>
         </div>
+
+        <div id="flash-message" class="flash-message"></div>
 
         <img src="media\1f359ce086f07b8864b1892907f863cb81333b3f-1728x1152.jpg" class="background" id ="background_blur"/>
     </main>

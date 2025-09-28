@@ -16,3 +16,43 @@ window.addEventListener('scroll', function() {
         bg.style.transform = `translateY(${parallax}px)`;
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    const flashMessage = document.getElementById("flash-message");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault(); // evita la redirección
+
+        const formData = new FormData(form);
+
+        try {
+            await fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSc51GxTi8mcUA9tss2z-Wzbiguv3OovtSO7kUYg7LQzzuvK_A/formResponse", {
+                method: "POST",
+                body: formData,
+                mode: "no-cors" // necesario porque Google Forms no devuelve CORS válido
+            });
+
+            // Mostrar mensaje de éxito
+            showFlashMessage("✅ ¡Gracias! Tu mensaje ha sido enviado.");
+
+
+            form.reset(); // limpia el formulario
+
+        } catch (error) {
+            showFlashMessage("❌ Hubo un error, inténtalo de nuevo.", "red");
+            flashMessage.style.color = "red";
+        }
+    });
+});
+function showFlashMessage(message, color = "green") {
+    const flashMessage = document.getElementById("flash-message");
+    flashMessage.textContent = message;
+    flashMessage.style.background = color === "green" ? "#28a745" : "#dc3545";
+    flashMessage.classList.add("show");
+
+    // Desaparece después de 3 segundos
+    setTimeout(() => {
+        flashMessage.classList.remove("show");
+    }, 3000);
+}
