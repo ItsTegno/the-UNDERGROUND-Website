@@ -46,12 +46,7 @@
 }
 
 
-.section_1_image{
-    border-radius: 15px;
-    align-self: center;
-}
-
-.section_3_image{
+.section_1_image, .section_3_image{
     border-radius: 15px;
     align-self: center;
 }
