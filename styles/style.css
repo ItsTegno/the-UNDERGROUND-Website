@@ -63,7 +63,7 @@ header {
         height: 10%;
     }
     .navigationItem {
-        margin: 0 20px 0 20px;
+        margin: 0 30px 0 30px;
     }
 }
 
@@ -121,4 +121,5 @@ footer {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+    will-change: transform, filter;
 }

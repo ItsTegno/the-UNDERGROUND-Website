@@ -1,21 +1,31 @@
-window.addEventListener('scroll', function() {
-    const scrollY = window.scrollY;
-    const maxScroll = window.innerHeight * 1; // Ajusta según lo que necesites
+let ticking = false;
 
-    // Progreso de 0 a 1
-    const progress = Math.min(scrollY / maxScroll, 1);
+window.addEventListener('scroll', function () {
+    if (!ticking) {
+        window.requestAnimationFrame(function () {
+            const scrollY = window.scrollY;
+            const maxScroll = window.innerHeight * 1; // Ajusta según lo que necesites
 
-    // Desenfoque dinámico del fondo
-    const bg = document.getElementById('background_blur');
+            // Progreso de 0 a 1
+            const progress = Math.min(scrollY / maxScroll, 1);
 
-    if (bg) {
-        const blurAmount = progress * 10; // 0px a 10px de blur
-        bg.style.filter = `blur(${blurAmount}px)`;
+            // Desenfoque dinámico del fondo
+            const bg = document.getElementById('background_blur');
+            if (bg) {
+                const blurAmount = progress * 10; // 0px a 10px de blur
+                bg.style.filter = `blur(${blurAmount}px)`;
 
-        const parallax = scrollY * -0.5; // Ajusta el factor para más/menos efecto
-        bg.style.transform = `translateY(${parallax}px)`;
+                const parallax = scrollY * -0.5; // Ajusta el factor
+                bg.style.transform = `translateY(${parallax}px)`;
+            }
+
+            ticking = false;
+        });
+
+        ticking = true;
     }
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
