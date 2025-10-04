@@ -14,7 +14,7 @@
 
 .sine-title{
     font-size: clamp(0rem, 12vw, 5rem);
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0;
 }
 .sine-subtitle{
@@ -66,7 +66,7 @@
 
 .spotify-title{
     font-size: clamp(0rem, 12vw, 5rem);
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0;
 }
 .spotify-subtitle{
@@ -83,7 +83,7 @@
         padding: 0px 0px 10% 0px;
     }
     .sine-buttons{
-        flex-direction: row;
+        width: 100%;
     }
     .spotify{
         flex-direction: column;
@@ -101,9 +101,8 @@
     .sine-text{
         padding: 0px 10% 0px 0px;
     }
-    .sine-buttons{
-        flex-direction: column; /* Coloca los elementos uno encima del otro */
-        width: 30%;
+    .sine-buttons{ /* Coloca los elementos uno encima del otro */
+        width: 500px;
     }
     .spotify{
         flex-direction: row;
