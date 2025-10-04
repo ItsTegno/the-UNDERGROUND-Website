@@ -93,7 +93,7 @@ h1 {
     left: 0;
     width: 1920px;
     /*overflow: hidden;*/
-    height: 50px;
+    height: 10px;
     image-rendering: pixelated;
 }
 
