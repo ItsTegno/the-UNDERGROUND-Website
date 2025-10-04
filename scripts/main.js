@@ -26,6 +26,14 @@ window.addEventListener('scroll', function () {
     }
 });
 
+const textarea = document.querySelector('textarea');
+
+textarea.addEventListener('input', () => {
+  textarea.style.height = 'auto'; // Resetea la altura
+  textarea.style.height = textarea.scrollHeight + 'px'; // Ajusta a su contenido
+});
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
